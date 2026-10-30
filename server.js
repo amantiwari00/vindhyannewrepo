@@ -78,7 +78,7 @@ app.post('/api/contact', async (req, res) => {
         res.status(200).json({ success: true, message: 'Your message has been received. We will get back to you shortly!' });
     } catch (error) {
         console.error('Error sending contact email:', error);
-        res.status(500).json({ success: false, message: 'Failed to send email. Please try again later or contact us directly.' });
+        res.status(500).json({ success: false, message: `Failed to send email: ${error.message}` });
     }
     console.log('-----------------------------------');
 });
@@ -122,7 +122,7 @@ app.post('/api/careers', upload.single('cresume'), async (req, res) => {
         res.status(200).json({ success: true, message: 'Your application and resume have been submitted successfully!' });
     } catch (error) {
         console.error('Error handling career submission:', error);
-        res.status(500).json({ success: false, message: 'An error occurred while sending your application. Please try again later.' });
+        res.status(500).json({ success: false, message: `An error occurred while sending your application: ${error.message}` });
     }
     console.log('-------------------------------');
 });

@@ -1,5 +1,5 @@
 # VGS Geotechnical Services — robots.txt
-# Website: https://vindhyangeotech.in/
+# Website: VGS Geotechnical Services
 # Last Updated: April 2026
 
 # ===== Allow all major search engine crawlers =====
@@ -62,4 +62,4 @@ Disallow: /
 
 # ===== Sitemap Reference =====
 
-Sitemap: https://vindhyangeotech.in/sitemap.xml
+Sitemap: /sitemap.xml
