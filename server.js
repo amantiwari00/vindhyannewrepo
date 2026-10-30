@@ -1,3 +1,4 @@
+
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
@@ -171,8 +172,12 @@ app.use((req, res) => {
 });
 
 // Start Server
+if (require.main === module || !process.env.VERCEL) {
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
     console.log(`Serving static files from ${__dirname}`);
     console.log(`Note: GMAIL_APP_PASSWORD requires 2-Step Verification to be enabled on your Google account. Use an App Password from Google Account Security, NOT your normal login password.`);
 });
+}
+
+module.exports = app;
