@@ -307,15 +307,16 @@
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(data)
         });
-        const result = await response.json();
-        if (result.success) {
+        const result = await response.json().catch(() => null);
+        if (response.ok && result && result.success) {
           alert("Thank you! Your message has been sent successfully.");
           document.getElementById('contactForm').reset();
         } else {
-          alert("Error: " + result.message);
+          const errMsg = (result && result.message) || ("Server error (" + response.status + "). Please try again later.");
+          alert("Error: " + errMsg);
         }
       } catch (err) {
-        alert("Failed to send message. Please try again later.");
+        alert("Failed to send message: " + (err.message || "Please check your connection."));
       } finally {
         btn.innerText = originalText;
         btn.disabled = false;
@@ -350,16 +351,17 @@
           method: 'POST',
           body: formData // Note: no Content-Type header for FormData, fetch sets it with boundary
         });
-        const result = await response.json();
+        const result = await response.json().catch(() => null);
         
-        if (result.success) {
+        if (response.ok && result && result.success) {
           alert("Success! " + result.message);
           form.reset();
         } else {
-          alert("Error: " + result.message);
+          const errMsg = (result && result.message) || ("Server error (" + response.status + "). Please try again later.");
+          alert("Error: " + errMsg);
         }
       } catch (err) {
-        alert("Failed to submit application. Please check your connection.");
+        alert("Failed to submit application: " + (err.message || "Please check your connection."));
       } finally {
         btn.innerText = originalText;
         btn.disabled = false;
