@@ -1,4 +1,3 @@
-
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
@@ -14,7 +13,6 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static files from the current directory
 // Clean URL redirects: redirect .html requests to clean paths
 app.use((req, res, next) => {
     if (req.method === 'GET' && req.path.endsWith('.html')) {
@@ -171,13 +169,13 @@ app.use((req, res) => {
     res.status(404).sendFile(path.join(__dirname, 'index.html'));
 });
 
-// Start Server
+// Start Server locally
 if (require.main === module || !process.env.VERCEL) {
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-    console.log(`Serving static files from ${__dirname}`);
-    console.log(`Note: GMAIL_APP_PASSWORD requires 2-Step Verification to be enabled on your Google account. Use an App Password from Google Account Security, NOT your normal login password.`);
-});
+    app.listen(PORT, () => {
+        console.log(`Server is running on http://localhost:${PORT}`);
+        console.log(`Serving static files from ${__dirname}`);
+        console.log(`Note: GMAIL_APP_PASSWORD requires 2-Step Verification to be enabled on your Google account. Use an App Password from Google Account Security, NOT your normal login password.`);
+    });
 }
 
 module.exports = app;
