@@ -14,7 +14,45 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Serve static files from the current directory
-app.use(express.static(__dirname));
+// Clean URL redirects: redirect .html requests to clean paths
+app.use((req, res, next) => {
+    if (req.method === 'GET' && req.path.endsWith('.html')) {
+        const cleanPath = req.path.slice(0, -5);
+        if (cleanPath === '/index') {
+            return res.redirect(301, '/');
+        }
+        return res.redirect(301, cleanPath);
+    }
+    next();
+});
+
+// Clean URL page routes
+app.get(['/', '/home'], (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+app.get('/about', (req, res) => {
+    res.sendFile(path.join(__dirname, 'about.html'));
+});
+
+app.get('/services', (req, res) => {
+    res.sendFile(path.join(__dirname, 'services.html'));
+});
+
+app.get('/gallery', (req, res) => {
+    res.sendFile(path.join(__dirname, 'gallery.html'));
+});
+
+app.get('/contact', (req, res) => {
+    res.sendFile(path.join(__dirname, 'contact.html'));
+});
+
+app.get('/privacy-policy', (req, res) => {
+    res.sendFile(path.join(__dirname, 'privacy-policy.html'));
+});
+
+// Serve static files from the current directory
+app.use(express.static(__dirname, { extensions: ['html'] }));
 
 // Configure Nodemailer transporter
 const transporter = nodemailer.createTransport({
@@ -127,7 +165,10 @@ app.post('/api/careers', upload.single('cresume'), async (req, res) => {
     console.log('-------------------------------');
 });
 
-// Removed fallback route to support standard static multi-page navigation
+// 404 fallback route for unknown pages
+app.use((req, res) => {
+    res.status(404).sendFile(path.join(__dirname, 'index.html'));
+});
 
 // Start Server
 app.listen(PORT, () => {

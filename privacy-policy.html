@@ -6,7 +6,20 @@
   <title>Privacy Policy - Vindhyan Geotechnical Services</title>
   <meta name="description" content="Learn how Vindhyan Geotechnical Services handles information submitted through this website." />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="vgs-logo.png" type="image/png" />
+  <!-- Favicons for Browsers & Google Search -->
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#2d306b" />
+
+  <!-- Open Graph / Search Engine Previews -->
+  <meta property="og:image" content="/favicon-512x512.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
 </head>
 <body>
   <div class="bg-particles" aria-hidden="true">
@@ -18,16 +31,16 @@
 
   <nav class="navbar" id="navbar">
     <div class="container">
-      <a href="index.html" class="nav-logo">
+      <a href="/" class="nav-logo">
         <img src="vgs-logo.png" alt="VGS Logo" />
         <div class="logo-text">VGS<span>GEOTECH</span></div>
       </a>
       <div class="nav-links" id="navLinks">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html" class="nav-cta">Contact Us</a>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/contact" class="nav-cta">Contact Us</a>
       </div>
       <div class="nav-toggle" id="navToggle">
         <span></span><span></span><span></span>
@@ -85,7 +98,16 @@
 
         <section id="cookies">
           <h2>Cookies and technical data</h2>
-          <p>This website does not currently include an analytics or advertising-cookie script. Hosting and email providers may process basic technical information needed to deliver and secure their services. Your browser also controls any cookies set by other services you choose to use.</p>
+          <p>We use cookies and browser storage (such as LocalStorage) to keep our website secure, remember your form inputs, and understand how visitors interact with our geotechnical engineering services. We classify cookies into three categories:</p>
+          <ul style="margin: 12px 0 16px 20px; line-height: 1.6; color: var(--gray-300);">
+            <li><strong>Strictly Necessary Cookies:</strong> Essential for website navigation, anti-spam security, and recording your privacy preferences (<code>vgs_cookie_consent</code>). These cannot be switched off.</li>
+            <li><strong>Analytics &amp; Performance Cookies:</strong> Help us anonymously evaluate page traffic patterns and service interest to improve our infrastructure solutions.</li>
+            <li><strong>Functional &amp; Experience Cookies:</strong> Enable user experience improvements, such as remembering temporary form field states and layout preferences.</li>
+          </ul>
+          <p>You can change or withdraw your cookie consent at any time using the preferences control below or via the "Cookie Settings" link in the footer of any page.</p>
+          <button type="button" class="btn btn-primary open-cookie-settings" style="margin-top: 14px; display: inline-flex; align-items: center; gap: 8px;">
+            <span>🍪</span> Manage Cookie Preferences
+          </button>
         </section>
 
         <section id="your-choices">
@@ -113,16 +135,16 @@
         <div>
           <h4>Quick Links</h4>
           <ul class="footer-links">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
         <div>
           <h4>Legal</h4>
           <ul class="footer-links">
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
           </ul>
         </div>
         <div>
@@ -136,7 +158,11 @@
       </div>
       <div class="footer-bottom">
         <p>© 2026 Vindhyan Geotechnical Services - All Rights Reserved</p>
-        <a href="privacy-policy.html">Privacy Policy</a>
+        <div class="footer-bottom-links">
+          <a href="/privacy-policy">Privacy Policy</a>
+          <span class="sep">·</span>
+          <a href="javascript:void(0)" class="open-cookie-settings">Cookie Settings</a>
+        </div>
       </div>
     </div>
   </footer>
