@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 54" width="220" height="54">
+  <defs>
+    <style>
+      .dfcc-green { fill: #00843D; }
+      .dfcc-navy { fill: #1B365D; }
+      .dfcc-orange { fill: #E65100; }
+      .dfcc-head { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-weight: 900; }
+      .dfcc-sub { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-weight: 700; fill: #333333; }
+    </style>
+  </defs>
+  <!-- DFCCIL Rail Tracks & Forward Speed Chevrons -->
+  <g transform="translate(10, 8)">
+    <!-- Rail Tracks Base Curve -->
+    <path d="M4 32 C12 28, 20 20, 26 12 L32 16 C25 24, 18 32, 8 36 Z" fill="#1B365D"/>
+    <path d="M12 36 C20 30, 27 22, 33 14 L38 18 C31 26, 23 34, 15 38 Z" fill="#00843D"/>
+    <!-- Dynamic Speed Triangles (High-Speed Corridor Arrow) -->
+    <polygon points="26,6 38,12 26,18" fill="#E65100"/>
+    <polygon points="18,10 26,14 18,18" fill="#F57C00"/>
+    <!-- Sleepers / Track Links -->
+    <line x1="8" y1="31" x2="14" y2="34" stroke="#FFFFFF" stroke-width="1.8"/>
+    <line x1="15" y1="25" x2="21" y2="28" stroke="#FFFFFF" stroke-width="1.8"/>
+    <line x1="22" y1="18" x2="28" y2="21" stroke="#FFFFFF" stroke-width="1.8"/>
+  </g>
+  <!-- DFCCIL Typography -->
+  <g transform="translate(56, 0)">
+    <text x="0" y="24" class="dfcc-green dfcc-head" font-size="21" letter-spacing="0.5">dfccil</text>
+    <text x="0" y="37" class="dfcc-sub" font-size="7.5" letter-spacing="0.2">DEDICATED FREIGHT CORRIDOR</text>
+    <text x="0" y="47" class="dfcc-navy" font-family="sans-serif" font-size="6.8" font-weight="700">CORP. OF INDIA LTD. · INDIAN RAILWAYS</text>
+  </g>
+</svg>
+

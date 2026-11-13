@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 54" width="220" height="54">
+  <defs>
+    <style>
+      .tata-blue { fill: #0B4EA2; }
+      .tata-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-weight: 800; }
+      .tata-sub { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-weight: 700; }
+    </style>
+  </defs>
+  <!-- Tata Iconic Ellipse & Stylized 'T' Symbol -->
+  <g transform="translate(8, 7)">
+    <ellipse cx="22" cy="20" rx="20" ry="16" fill="#0B4EA2"/>
+    <!-- Stylized split-T swooshes -->
+    <path d="M14 12 C18 12, 19 15, 19 20 C19 24, 18 28, 14 28 C8 26, 6 22, 6 20 C6 18, 8 14, 14 12 Z" fill="#FFFFFF"/>
+    <path d="M30 12 C26 12, 25 15, 25 20 C25 24, 26 28, 30 28 C36 26, 38 22, 38 20 C38 18, 36 14, 30 12 Z" fill="#FFFFFF"/>
+    <ellipse cx="22" cy="20" rx="2.5" ry="8" fill="#0B4EA2"/>
+    <path d="M22 15 L22 28" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <!-- Brand Typography -->
+  <text x="62" y="26" class="tata-blue tata-title" font-size="18" letter-spacing="4">TATA</text>
+  <text x="63" y="42" class="tata-blue tata-sub" font-size="12.5" letter-spacing="3.5">POWER</text>
+</svg>
+

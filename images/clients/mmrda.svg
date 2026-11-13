@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 54" width="220" height="54">
+  <defs>
+    <style>
+      .mmrda-blue { fill: #005DAA; }
+      .mmrda-green { fill: #009639; }
+      .mmrda-head { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-weight: 900; }
+      .mmrda-sub { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-weight: 600; fill: #4A5568; }
+    </style>
+  </defs>
+  <!-- MMRDA Metro & Bridge Arc Symbol -->
+  <g transform="translate(10, 6)">
+    <!-- Outer Infrastructure Ring/Arc -->
+    <path d="M4 34 A20 20 0 0 1 36 10 L33 13 A16 16 0 0 0 7 32 Z" fill="#005DAA"/>
+    <!-- Inner Green Growth Arc -->
+    <path d="M12 36 A16 16 0 0 1 36 20 L33 23 A12 12 0 0 0 15 35 Z" fill="#009639"/>
+    <!-- High Speed Link / Bridge Piercing Arrow -->
+    <path d="M8 26 Q24 20 38 12 L38 16 Q24 23 9 29 Z" fill="#E65100"/>
+    <circle cx="36" cy="11" r="3" fill="#009639"/>
+  </g>
+  <!-- MMRDA Typography -->
+  <text x="60" y="27" class="mmrda-blue mmrda-head" font-size="21" letter-spacing="1.5">MMRDA</text>
+  <text x="61" y="40" class="mmrda-sub" font-size="7.5" letter-spacing="0.5">MUMBAI METROPOLITAN REGION</text>
+  <text x="61" y="48" class="mmrda-green mmrda-head" font-size="6.5" letter-spacing="0.8">DEVELOPMENT AUTHORITY</text>
+</svg>
+

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 54" width="220" height="54">
+  <defs>
+    <style>
+      .siemens-teal { fill: #00646E; }
+      .siemens-font { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-weight: 900; }
+    </style>
+  </defs>
+  <!-- Siemens Official Wordmark -->
+  <text x="110" y="32" text-anchor="middle" class="siemens-teal siemens-font" font-size="28" letter-spacing="4.5">SIEMENS</text>
+  <text x="110" y="46" text-anchor="middle" fill="#666666" font-family="'Segoe UI', Roboto, sans-serif" font-style="italic" font-size="8.5" font-weight="500" letter-spacing="1">Ingenuity for life</text>
+</svg>
+

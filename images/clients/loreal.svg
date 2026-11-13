@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 54" width="220" height="54">
+  <defs>
+    <style>
+      .loreal-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-weight: 700; fill: #111111; }
+    </style>
+  </defs>
+  <!-- L'Oréal Paris Official Wordmark -->
+  <text x="110" y="31" text-anchor="middle" class="loreal-text" font-size="25" letter-spacing="3.5">L'ORÉAL</text>
+  <text x="110" y="44" text-anchor="middle" fill="#666666" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8" font-weight="600" letter-spacing="4">PARIS</text>
+</svg>
+

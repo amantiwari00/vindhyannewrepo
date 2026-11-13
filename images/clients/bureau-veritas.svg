@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 54" width="220" height="54">
+  <defs>
+    <style>
+      .bv-red { fill: #CD1317; }
+      .bv-dark { fill: #1A1A1A; }
+      .bv-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-weight: 800; }
+    </style>
+  </defs>
+  <!-- Bureau Veritas Historic Shield / Crest -->
+  <g transform="translate(10, 6)">
+    <!-- Red Shield Base -->
+    <path d="M4 2 L34 2 C34 18, 32 32, 19 40 C6 32, 4 18, 4 2 Z" fill="#CD1317"/>
+    <!-- Inner Gold/White Inset -->
+    <path d="M7 5 L31 5 C31 18, 29 29, 19 36 C9 29, 7 18, 7 5 Z" fill="none" stroke="#D4AF37" stroke-width="1.2"/>
+    <!-- Lady Veritas Stylized Figure (Scales & Mirror) -->
+    <circle cx="19" cy="12" r="2.8" fill="#FFFFFF"/>
+    <path d="M16 15 L22 15 L23 26 L15 26 Z" fill="#FFFFFF"/>
+    <!-- Scales beam -->
+    <line x1="12" y1="17" x2="26" y2="17" stroke="#D4AF37" stroke-width="1"/>
+    <circle cx="12" cy="20" r="1.5" fill="#D4AF37"/>
+    <circle cx="26" cy="20" r="1.5" fill="#D4AF37"/>
+    <!-- 1828 year ribbon -->
+    <rect x="11" y="29" width="16" height="5" rx="1.5" fill="#FFFFFF"/>
+    <text x="19" y="33" text-anchor="middle" font-size="3.8" font-weight="900" fill="#CD1317" font-family="sans-serif">1828</text>
+  </g>
+  <!-- Bureau Veritas Wordmark -->
+  <text x="56" y="24" class="bv-dark bv-text" font-size="14.5" letter-spacing="1.5">BUREAU</text>
+  <text x="56" y="39" class="bv-red bv-text" font-size="14.5" letter-spacing="1.5">VERITAS</text>
+  <text x="57" y="47" fill="#666666" font-family="sans-serif" font-size="6.5" font-weight="600" letter-spacing="1px">SHAPING A WORLD OF TRUST</text>
+</svg>
+
